@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simplotel Frontend Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Replace the font family below if the PDF specifies a different one -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+      <div class="container nav-wrapper">
+        <nav id="primary-nav" class="primary-nav" role="navigation">
+          <ul>
+
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+              <label for="nav-toggle" class="hamburger" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+                ☰
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- SECTION 1: Hero split layout -->
+      <section id="home" class="section-hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="eyebrow">Lorem Ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+              est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+              euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+              quam et tristique. Curabitur nec faucibus purus. Quisque congue sem
+              nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac
+              porta viverra.
+            </p>
+            <a class="btn" href="#order">Click Me</a>
+          </div>
+          <div class="hero-media">
+            <!-- Replace hero images with provided high-res assets. Maintain aspect ratio. -->
+            <picture>
+              <source srcset="images/pexels-robin-stickel-70497.jpg" media="(min-width: 768px)" />
+              <img src="images/pexels-robin-stickel-70497.jpg" alt="Burger and fries on a plate" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Gallery + Callout card on gradient background -->
+      <section class="section-gallery">
+        <div class="container gallery-grid">
+          <div class="gallery-media">
+            <div class="gallery-col">
+              <img src="images/pexels-rachel-claire-6752433.jpg" alt="Restaurant exterior sign" class="tile" />
+              <img src="images/pexels-eva-bronzini-6141651.jpg" alt="Sidewalk cafe" class="tile" />
+            </div>
+            <div class="gallery-col tall">
+              <img src="images/pexels-mister-mister-3434523.jpg" alt="More dishes" class="tile tall" />
+            </div>
+          </div>
+
+          <aside class="callout">
+            <p class="kicker">Lorem Ipsum</p>
+            <h2>Lorem Ipsum Set Ademir</h2>
+            <a href="#" class="text-link">Click <img src="images/icons8-arrow-30.png" alt="" width="16" height="16" /></a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <!-- No JS required; the hamburger works with CSS. The line below only updates the year for convenience. Remove if strictly no JS is needed. -->
+    
+  </body>
+</html>
